@@ -1,0 +1,68 @@
+<section class="items-section block-line">
+	<div class="container">
+
+		<!--  Auto generating filters -->
+		{% assign categories = site.data.content.articles | map: "language" | uniq %}
+		<!--  Auto generating filters end -->
+
+		<ul id="filters" class="button-block">
+			<li>
+				<a href="" class="btn btn-sm btn-outline-secondary active" data-filter="*">
+					All
+				</a>
+			</li>
+			{% for item in categories %}
+			<li>
+				<a href="#" class="btn btn-sm btn-outline-secondary" data-filter=".{{ item | downcase }}">
+					{{ item }}
+				</a>
+			</li>
+			{% endfor %}
+
+		</ul>
+
+		<div class="row grid">
+			{% for article in site.data.content.articles %}
+			<div class="col-lg-4 col-md-6 element-item {{ article.language | downcase }}">
+				<!--  card -->
+				<div class="card" target="_blank">
+					<div class="card-body">
+						<div class="card-body-text">
+							<h4 class="card-title">
+								<a href="{{ article.github }}">{{ article.title }}</a>
+							</h4>
+							<div class="card-text">
+								<p>
+									<a href="{{ article.github }}">{{ article.content }}</a>
+								</p>
+							</div>
+						</div>
+						<div class="card-bottom-content">
+							<div class="left-content">
+								<span class="circle {{ article.language | downcase }}"></span>
+								<p>{{ article.language }}</p>
+							</div>
+							{% if article.medium %}
+							<div class="card-btn-content">
+								<a href="{{ article.medium }}">
+									<svg class="card-link-letter" viewBox="0 0 24 24">
+										<use xlink:href="#medium"></use>
+									</svg>
+									<div class="card-link">
+										Read more
+										<svg class="card-link-arrow" viewBox="0 0 9 9">
+											<use xlink:href="#arrow"></use>
+										</svg>
+									</div>
+								</a>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<!--  .card -->
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

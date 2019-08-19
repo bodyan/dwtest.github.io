@@ -1,0 +1,30 @@
+.info-section {
+	@media screen and (max-width: 568px) {
+		padding-top: 30px;
+
+		.info-content {
+			&::after {
+				padding-top: 11px;
+			}
+
+			.title {
+				font-size: $font-size-title-small;
+			}
+
+			.content-text {
+				padding: 12px;
+			}
+		}
+	}
+	padding-top: 55px;
+}
+
+.info-content {
+	&::after {
+		padding-top: 35px;
+	}
+
+	.content-text {
+		padding-top: 17px;
+	}
+}

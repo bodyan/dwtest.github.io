@@ -1,0 +1,37 @@
+theme: dw-theme
+
+languageCode: en-us
+title: Daniel Welington
+copyright: ©2018
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+sass:
+    style: compressed
+
+
+params:
+
+    #To prevent most search engine web crawlers from indexing a page on your
+    #noindex: true 
+
+    #Hero section config
+    heroTitle: Open Source at Daniel Wellington
+    heroSubtitle: It is time to contribute back to the community
+    heroImgSrc: hero-banner.jpg
+
+    #out thougths
+    our_thought_limit: 6   
+    #see more button 
+    seeMoreHref: https://github.com/dwtechnologies
+
+    #external article
+    external_article_limit: 3
+    seeMoreExternalHref: https://github.com/dwtechnologies?external
+
+    #footer section config
+    footerTitle: JOIN OUR MOVEMENT

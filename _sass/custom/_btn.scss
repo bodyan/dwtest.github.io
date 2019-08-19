@@ -1,0 +1,17 @@
+.btn {
+	path {
+		transition: background-color 0.15s ease-in-out;
+	}
+
+	&:hover {
+		path {
+			fill: #fff !important;
+		}
+	}
+}
+
+.thoughts-btn {
+	svg {
+		margin-top: -5px;
+	}
+}

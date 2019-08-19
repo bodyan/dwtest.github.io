@@ -1,0 +1,21 @@
+.items-section {
+	padding: 60px 0;
+
+	&::after {
+		padding-top: 70px;
+	}
+}
+
+.button-block {
+	margin: 0;
+	padding: 0 0 13px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		margin: 0 3px 7px 7px;
+		list-style: none;
+	}
+}
+

@@ -1,0 +1,43 @@
+.title {
+	font-size: $font-size-title;
+	line-height: 31.2px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4.8px;
+}
+
+.content-text {
+	font-size: $font-size-content;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.15px;
+	max-width: 620px;
+}
+
+.block-line {
+	&::after {
+		margin: 0 auto;
+		height: 1px;
+
+		display: block;
+		content: "";
+		max-width: 274px;
+		border-bottom: 1px solid $line-color;
+	}
+}
+
+.btn {
+	font-size: $font-size-btn;
+	line-height: 15.6px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+	&.active {
+		color: #fff !important;
+		background-color: $primary-color !important;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+	}
+}

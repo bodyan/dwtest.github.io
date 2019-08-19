@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+    {% include ga-head.html %}
+</head>
+
+<body>
+    {% include ga-after-body.html %}
+    {% include header.html %}
+
+    <section class="info-section">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="info-content block-line">
+                    {% if title %}
+                    <h1 class="title">
+                        {{ title }}
+                    </h1>
+                    {% endif %}
+                    <div class="content-text">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% for section in page.page_sections %}
+        {% include {{ section.block }}-section.html %}
+    {% endfor %}
+    {% include external-articles.html %}
+    {% include footer.html %}
+</body>
+
+</html>

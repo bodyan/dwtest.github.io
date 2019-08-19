@@ -1,0 +1,35 @@
+.career-list {
+	margin: 0;
+	padding: 48px 0 0;
+
+	li {
+		@media screen and (max-width: 768px) {
+			justify-content: flex-start;
+			flex-direction: column;
+		}
+		font-size: $font-size-content;
+
+		padding: 12.5px 0;
+
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+
+		a {
+			line-height: 20.8px;
+
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 3.2px;
+		}
+
+		span {
+			@media screen and (max-width: 568px) {
+				font-size: $font-size-content-small;
+			}
+			line-height: 24px;
+			letter-spacing: 0.15px;
+			border-bottom: 1px solid transparent;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+---
+articles:
+- title: VUE-COGNITO
+  content: Promise based Vue plugin for AWS Cognito authentication
+  language: Go
+  github: "#github"
+- title: SPOT-drainer
+  content: AWS Lambda function to drain spot ECS instances
+  language: Go
+  github: "#"
+  medium: "#medium-url"
+- title: ecs-balancer
+  content: AWS Lambda function to balance tasks in an ECS cluster
+  language: Go
+  github: "#"
+  medium: "#medium-url"
+- title: kmsdecrypt
+  content: Package for decrypting strings from AWS KMS. Supports decrypting ENV variables
+    (auto or by key-names), maps, slices of string or simple strings.
+  language: Go
+  github: "#"
+- title: SPOT-drainer
+  content: AWS Lambda function to drain spot ECS instances
+  language: Go
+  github: "#"
+  medium: "#medium-url"
+- title: vue-two-stage-button
+  content: AWS Lambda function to balance tasks in an ECS
+  language: Vue
+  github: "#"
+  medium: "#medium-url"
+- title: Employee-Satisfaction
+  content: Employee Satisfaction system based on AWS IoT Buttons
+  language: JavaScript
+  github: "#github"
+  medium: "#medium-url"
+- title: steptest
+  content: Package and program made to make transactional load test easy.
+  language: Go
+  github: "#github"
+  medium: "#medium-url"
+- title: s3-elasticsearch
+  content: Lambda function reads s3 and push to AWS elasticsearch
+  language: JavaScript
+  github: "#github"
+  medium: "#medium-url"
+- title: cwl-modsecurity-reader
+  content: AWS cloudwatch stream reader for pushing modsecurity logs to elasticsearch
+  language: JavaScript
+  github: "#github"
+  medium: "#medium-url"

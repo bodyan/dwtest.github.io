@@ -1,0 +1,22 @@
+---
+articles:
+- src: card-img.png
+  title: External link 1
+  author: Author Name 2
+  link: "#"
+- src: card-img.png
+  title: External link 2
+  author: Ignazio Mottola
+  link: https://medium.com/@ignaziomottola/daniel-wellington-perfect-instagram-marketing-strategy-ce637c19c68c
+- src: card-img.png
+  title: WHAT’S NEXT FOR MOBILE COMMERCE
+  author: 'Author Name '
+  link: ''
+- src: card-img.png
+  title: WHAT’S NEXT FOR MOBILE COMMERCE
+  author: Author Name 4
+  link: ''
+- src: card-img.png
+  title: WHAT’S NEXT FOR MOBILE COMMERCE
+  author: 'Author Name '
+  link: ''

@@ -1,0 +1,66 @@
+.hero {
+	position: relative;
+
+	display: flex;
+	min-height: 500px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-direction: row;
+
+	> .container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.title-block {
+		text-align: center;
+
+		z-index: 5;
+
+		color: #fff !important;
+		max-width: 575px;
+
+		.title {
+			@include media-breakpoint-up(sm) {
+				font-size: 46px;
+				line-height: 1.5;
+			}
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		.sub-title {
+			@include media-breakpoint-up(sm) {
+				font-size: 24px;
+				line-height: 32px;
+
+				margin-top: 32px;
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+			font-size: 20px;
+			line-height: 26px;
+
+			margin-top: 20px;
+			letter-spacing: 4.8px;
+			text-transform: uppercase;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
+		height: 100%;
+		width: 100%;
+
+		display: block;
+
+		opacity: 0.5;
+		content: "";
+		background-color: #000;
+	}
+}
