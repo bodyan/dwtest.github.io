@@ -14,7 +14,6 @@ defaults:
 sass:
     style: compressed
 
-
 params:
     #To prevent most search engine web crawlers from indexing a page on your
     #noindex: true 
@@ -35,3 +34,8 @@ params:
 
     #footer section config
     footerTitle: JOIN OUR MOVEMENT
+
+    rssPage: https://careerseurope.danielwellington.com/jobs.rss
+
+collections:
+  - dw_careers
