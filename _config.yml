@@ -1,5 +1,5 @@
 theme: dw-theme
-baseurl: "dwtest.github.io"
+baseurl: "/dwtest.github.io"
 
 languageCode: en-us
 title: Daniel Welington
