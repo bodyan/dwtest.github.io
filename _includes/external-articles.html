@@ -14,7 +14,7 @@
             </svg>
           </a>
           {% else %}
-          <a href="{{ article.link }}" class="card-img" style="background-image:url(/assets/img/{{ article.src }})"></a>
+          <a href="{{ article.link }}" class="card-img" style="background-image:url({{ 'assets/img/' | append: article.src | relative_url }})"></a>
           {% endif %}
           <div class="card-body">
             <div class="card-body-text">

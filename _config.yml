@@ -1,4 +1,5 @@
 theme: dw-theme
+baseurl: ""
 
 languageCode: en-us
 title: Daniel Welington
@@ -15,7 +16,6 @@ sass:
 
 
 params:
-
     #To prevent most search engine web crawlers from indexing a page on your
     #noindex: true 
 
