@@ -35,7 +35,7 @@ params:
     #footer section config
     footerTitle: JOIN OUR MOVEMENT
 
-    rssPage: https://careerseurope.danielwellington.com/jobs.rss
+    rssPage: https://careerseurope.danielwellington.com/jobs.rss?department_id=21328
 
 collections:
   - dw_careers

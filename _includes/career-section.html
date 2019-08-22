@@ -1,16 +1,11 @@
 <div id="js--career-list" class="py-3 continer">
     {% if site.dw_careers.size > 0 %}
-    <div class="row justify-content-center">
-        <ul style="list-style: none;">
+    <div class="d-flex justify-content-center">
+        <ul class="text-center" style="list-style: none; margin: 0; padding: 0;">
             {% for e in site.dw_careers %}
             <li class="py-3">
                 <a href="{{ e.link }}">
-                    <div>
-                        <span title="{{ e.title }}" style="color: #fff;">{{ e.title }}</span><br>
-                        {% if e.city != blank %}
-                        <span style="color: #fff;"> {{ e.city }} </span>
-                        {% endif %}
-                    </div>
+                    <span title="{{ e.title }}" style="color: #fff;">{{ e.title }} | {{ e.city }}</span>  
                 </a>
             </li>
             {% endfor %}
